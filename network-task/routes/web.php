@@ -5,6 +5,6 @@ use App\Http\Controllers\UserController;
 
 Route::get('/',[UserController::class,'index']);
 
-Route::view('/register', 'registration');
+// Route::view('', 'registration');
 
-Route::post('/createAccount',[UserController::class,'createAccount']);
+Route::get('/register',[UserController::class,'createAccount']);
